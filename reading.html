@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets//css/style.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <nav id="nav-desktop" class="container nav">
+                <div class="img-logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hover-menu">
+                    <a href="#" class="hover-menu-button">
+                        <i class="fa fa-navicon"></i>
+                        <p>Thể Loại</p>
+                    </a>
+                    <div class="hover-menu-categories">
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Tiên Hiệp</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Huyền Ảo</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Võng Du</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Chuyển Sinh</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="" id="form-search">
+                        <input type="text" class="search-input" placeholder="Tìm truyện, tác giả...">
+                        <button type="submit" class="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <nav id="nav-mobile" class="container nav">
+                <div class="img-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="nav-button" onclick="ToggleNavMobile()">
+                    <a href="#">
+                        <i class="fa fa-navicon"></i>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+        <div class="nav-mobile-dropdown">
+            <div class="search">
+                <form action="" id="form-search">
+                    <input type="text" class="search-input" placeholder="Tìm truyện, tác giả...">
+                    <button type="submit" class="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="category">
+                <div class="title d-flex">
+                    <p>Thể Loại</p>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="d-flex flex-wrap grid">
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="title-breaking-comic">
+                <h1>
+                    Truyện Văn Minh Chi Vạn Giới Lĩnh Chủ : chương 4654: tân chính quyền
+                </h1>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="breaking">
+                <a href="#" class="home">
+                    <i class="fa fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Dị giới</span>
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Gia đình tu tiên</span>
+                </a>
+
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Chương 149 thu hoạch lớn</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="container section-padding-reading">
+            <div id="reading">
+                <div class="title">
+                    <h2>
+                        <a href="#">
+                            GIA ĐÌNH TU TIÊN: TÔI CÓ THỂ THẤY LỜI KHUYÊN
+                        </a>
+                    </h2>
+                    <h3>
+                        <i class="fa fa-user"></i>
+                        <a href="#">
+                            Đêm tĩnh 7
+                        </a>
+                    </h3>
+                    <h3><i class="fa fa-pencil-square-o"></i> Chương 149 Thu hoạch lớn</h3>
+                </div>
+                <div class="nav-a-chapter">
+                    <a type="a" class="btn-chapter btn-prev-chap"><i class="fa fa-angle-left"></i>
+                        <span class="span-chapter">
+                            Chương
+                        </span>
+
+                        Trước</a>
+                    <a type="a" class="btn-chapter btn-setting"><i class="fa fa-gear"></i> <span class="span-setting">
+                            Cài Đặt
+                        </span></a>
+                    <a type="a" class="btn-chapter btn-next-chap">
+                        <span class="span-chapter">
+                            Chương
+                        </span>
+
+                        Sau
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="content">
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                    <p>Phương Mộc Sơn, bên cạnh thanh liên trì, chỗ lương đình, giờ phút này lại náo nhiệt lên.</p>
+                    <p>Lần này tham gia hoàng phẩm bí cảnh chuyến đi, ngoại trừ Lôi Huyền cùng Lâm Thế Kỳ hai người ra,
+                        tất cả
+                        đều đến nơi này.</p>
+                </div>
+                <div class="nav-a-chapter">
+                    <a type="a" class="btn-chapter btn-prev-chap"><i class="fa fa-angle-left"></i>
+                        <div class="span-chapter">
+                            Chương
+                        </div>
+                        Trước
+                    </a>
+                    <a type="a" class="btn-chapter btn-setting"><i class="fa fa-gear"></i>
+                        <span class="span-setting">
+                            Cài Đặt
+                        </span>
+                    </a>
+                    <a type="a" class="btn-chapter btn-next-chap">
+                        <div class="span-chapter">
+                            Chương
+                        </div>
+                        Sau
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="about-reading-footer">
+                    <div>
+                        Truyện chữ tổng hợp website đọc truyên chữ online hàng đầu hiện nay. Tổng hợp các bộ truyện
+                        chữ
+                        tiên hiệp, huyền ảo, tận thế, đô thị, ngôn tình hay nhất được nhiều đọc giả bầu chọn
+                    </div>
+
+                    <div>
+                        Các bạn đang theo dõi bộ truyện <h3><a
+                                href="https://truyenchuth.com/truyen-gia-dinh-tu-tien-toi-co-the-thay-loi-khuyen">Gia
+                                đình tu tiên: Tôi có thể thấy lời khuyên </a></h3>được convert và dịch mới nhất. Đây là
+                        một trong những bộ truyện chữ thuộc thể loại <a title="Tiên hiệp - Tu chân"
+                            href="https://truyenchuth.com/tien-hiep-tu-chan">Tiên hiệp - Tu chân
+                        </a>&nbsp;&nbsp;&nbsp;hay nhất hiện nay. Bộ truyện được sáng tác bởi bàn tay tài hoa của tác giả
+                        Đêm tĩnh 7.
+                    </div>
+                    <div>
+                        Bạn có thể đọc truyện <a
+                            title="Gia đình tu tiên: Tôi có thể thấy lời khuyên Chương 148 Cơ hội kinh doanh cá sấu linh hồn"
+                            href="https://truyenchuth.com/truyen-gia-dinh-tu-tien-toi-co-the-thay-loi-khuyen/chuong-148-co-hoi-kinh-doanh-ca-sau-linh-hon.html">Gia
+                            đình tu tiên: Tôi có thể thấy lời khuyên Chương 148 Cơ hội kinh doanh cá sấu linh hồn
+                        </a>được cập nhật nhanh nhất trong thời gian gần đây. Các chap mới nhất của truyện Gia đình tu
+                        tiên: Tôi có thể thấy lời khuyên sẽ lên tục được update trong thời gian sắp tới. Hãy theo dõi
+                        website đọc truyện online TruyenchuTH.com ngay để đừng bỏ lỡ những bộ truyện chữ hay nhé.
+                    </div>
+                    <div>
+                        Tại sao bạn lại nên chọn TruyenChuTH.com để theo dõi nhửng bộ truyện chữ mới nhất?
+                        TruyenChuTH.com luôn cập nhật những bộ truyện chữ hay và mới nhất dựa theo bảng xếp hạng truyện
+                        tại Trung Quốc.
+                        Đôi lúc đọc truyện, những quảng cáo hiện lên khiến bạn cảm thấy khó chịu. Nhưng đừng lo vì điều
+                        đó, vì tại TruyenChuTH.com, những quảng cáo luôn được hiển thị có khoa học. Sẽ không khiến các
+                        bạn cảm thấy bực mình hay khó chịu.
+                        TruyenChuTH.com còn có một đội ngũ quản trị viên giàu kinh nghiệm. Luôn đảm bảo tốc độ load
+                        truyện được nhanh chóng, giúp cho các độc giả coi truyện không bị giật hay load chậm.
+                        Còn chờ gì nữa hãy theo lưu ngay địa chỉ website TruyenChuTH.com của chúng tôi vào bookmark của
+                        bạn ngay để có thể theo dõi những bộ truyện chữ hay và mới nhất. Chúc các bạn có những phút giây
+                        giải trí vui vẻ.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <footer>
+        <div class="container d-flex flex-wrap">
+            <div class="w-25 w-100-mobile">
+                <div class="about-us">
+                    <p>
+                        Truyện chữ | Website đọc truyện chữ online hay. Cập nhật những bộ truyện convert (truyencv),
+                        bản
+                        dịch hay và mới nhất hiện nay. Với tất cả các thể loại tiểu thuyết như:truyện tiên hiệp, huyễn
+                        huyễn, kiếm hiệp, xuyên không, đô thị, đam mỹ được cập nhật chương theo ngày, tuần, tháng
+                    </p>
+                    <p>
+                        Email: Truyenchuth@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="w-75 w-100-mobile category-footer">
+                <div class="d-flex flex-wrap">
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh mục hot
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main giấu nghề
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                truyện Tông Môn
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh sách truyện được xem nhiều nhất
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Mạng xã hội
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Đối tác
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>Copyright © 2023 - All Rights Reserved. TruyenchuTH.com Phiên bản thử nghiệm</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+        function ToggleNavMobile() {
+            document.querySelector('.nav-mobile-dropdown').classList.toggle("show");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

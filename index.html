@@ -14,11 +14,12 @@
 
 <body>
     <div id="wrap">
-
         <header id="header">
-            <nav id="nav" class="container">
+            <nav id="nav-desktop" class="container nav">
                 <div class="img-logo">
-                    <img src="assets/images/logo.png" alt="">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
                 </div>
                 <div class="hover-menu">
                     <a href="#" class="hover-menu-button">
@@ -61,7 +62,68 @@
                     </form>
                 </div>
             </nav>
+            <nav id="nav-mobile" class="container nav">
+                <div class="img-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="nav-button" onclick="ToggleNavMobile()">
+                    <a href="#">
+                        <i class="fa fa-navicon"></i>
+                    </a>
+                </div>
+            </nav>
+
         </header>
+        <div class="nav-mobile-dropdown">
+            <div class="search">
+                <form action="" id="form-search">
+                    <input type="text" class="search-input" placeholder="Tìm truyện, tác giả...">
+                    <button type="submit" class="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="category">
+                <div class="title d-flex">
+                    <p>Thể Loại</p>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="d-flex flex-wrap grid">
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="container">
             <div class="title-breaking-comic">
@@ -69,7 +131,7 @@
             </div>
         </section>
 
-        <div class="container d-flex">
+        <div class="container d-flex wrap-content">
             <div class="section-left section-padding w-680">
                 <section class="section-background section-propose">
                     <div class="title-section">
@@ -101,7 +163,7 @@
                     <div class="content-section">
                         <div class="w3-content w3-display-container">
                             <div class="mySlides">
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-3.jpg">
                                         <div class="overlay-title">
@@ -110,12 +172,10 @@
                                                     Lạn Kha Kỳ Duyên
                                                 </a>
                                             </h3>
-
-
                                         </div>
                                     </figure>
                                 </div>
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-2.jpg">
                                         <div class="overlay-title">
@@ -127,7 +187,7 @@
                                         </div>
                                     </figure>
                                 </div>
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-1.jpg">
                                         <div class="overlay-title">
@@ -141,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="mySlides">
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-1.jpg">
                                         <div class="overlay-title">
@@ -153,7 +213,7 @@
                                         </div>
                                     </figure>
                                 </div>
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-4.jpg">
                                         <div class="overlay-title">
@@ -165,7 +225,7 @@
                                         </div>
                                     </figure>
                                 </div>
-                                <div class="w-4-column">
+                                <div class="w-4-column w-50-mobile">
                                     <figure>
                                         <img src="assets/images/img-3.jpg">
                                         <div class="overlay-title">
@@ -178,7 +238,6 @@
                                     </figure>
                                 </div>
                             </div>
-
                             <button class="w3-button w3-text-shadow w3-black w3-display-left" onclick="plusDivs(-1)">
                                 <i class="fa fa-angle-left"></i>
                             </button>
@@ -229,7 +288,7 @@
                             </h3>
                         </div>
                         <div class="title-section-right">
-                            <p>11/04/2023</p>
+                            <p class="date">11/04/2023</p>
                         </div>
                     </div>
                     <div class="title-section font-list">
@@ -242,7 +301,7 @@
                             </h3>
                         </div>
                         <div class="title-section-right">
-                            <p>11/04/2023</p>
+                            <p class="date">11/04/2023</p>
                         </div>
                     </div>
                     <div class="title-section font-list">
@@ -255,7 +314,7 @@
                             </h3>
                         </div>
                         <div class="title-section-right">
-                            <p>11/04/2023</p>
+                            <p class="date">11/04/2023</p>
                         </div>
                     </div>
                     <div class="title-section font-list">
@@ -268,7 +327,7 @@
                             </h3>
                         </div>
                         <div class="title-section-right">
-                            <p>11/04/2023</p>
+                            <p class="date">11/04/2023</p>
                         </div>
                     </div>
                 </section>
@@ -279,10 +338,8 @@
                         <div class="title-section-left">
                             <h2>
                                 <a href="#">
-
                                     TRUYỆN FULL
                                     <i class="fa fa-angle-right"></i>
-
                                 </a>
                             </h2>
                         </div>
@@ -306,7 +363,7 @@
                     </div>
                     <div class="content-section p-0">
                         <div class="grid-image d-flex flex-wrap">
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-1.jpg">
@@ -322,7 +379,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-2.jpg">
@@ -338,7 +395,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -353,7 +410,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -369,7 +426,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-1.jpg">
@@ -385,7 +442,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-2.jpg">
@@ -401,7 +458,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -416,7 +473,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -432,7 +489,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-1.jpg">
@@ -448,7 +505,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-2.jpg">
@@ -464,7 +521,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -479,7 +536,7 @@
 
                                 </div>
                             </div>
-                            <div class="w-25">
+                            <div class="w-25 w-50-mobile">
                                 <figure>
                                     <a href="#">
                                         <img class="hover-opacity" src="assets/images/img-3.jpg">
@@ -499,7 +556,6 @@
                     </div>
                 </section>
             </div>
-
             <div class="section-right section-padding w-320">
                 <section class="section-background category-section">
                     <div class="title-section">
@@ -547,11 +603,344 @@
                         </div>
                     </div>
                 </section>
-            </div>
 
+                <section class="section-background featured-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                Truyện Hay
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>1</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>2</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>3</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section read-more">
+                        <div class="order d-flex">
+                            <button>Xem thêm <i class="fa fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-background new-publish-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                Truyện Mới Đăng
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>1</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>2</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>3</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section read-more">
+                        <div class="order d-flex">
+                            <button>Xem thêm <i class="fa fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
     </div>
+
+    <footer>
+        <div class="container d-flex flex-wrap">
+            <div class="w-25 w-100-mobile">
+                <div class="about-us">
+                    <p>
+                        Truyện chữ | Website đọc truyện chữ online hay. Cập nhật những bộ truyện convert (truyencv),
+                        bản
+                        dịch hay và mới nhất hiện nay. Với tất cả các thể loại tiểu thuyết như:truyện tiên hiệp, huyễn
+                        huyễn, kiếm hiệp, xuyên không, đô thị, đam mỹ được cập nhật chương theo ngày, tuần, tháng
+                    </p>
+                    <p>
+                        Email: Truyenchuth@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="w-75 w-100-mobile category-footer">
+                <div class="d-flex flex-wrap">
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh mục hot
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main giấu nghề
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                truyện Tông Môn
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh sách truyện được xem nhiều nhất
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Mạng xã hội
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Đối tác
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>Copyright © 2023 - All Rights Reserved. TruyenchuTH.com Phiên bản thử nghiệm</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
     <script>
         var slideIndex = 1;
@@ -571,6 +960,13 @@
             }
             x[slideIndex - 1].style.display = "flex";
         }
+
+        function ToggleNavMobile() {
+            document.querySelector('.nav-mobile-dropdown').classList.toggle("show");
+
+        }
+
+
     </script>
 </body>
 
