@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets//css/style.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <nav id="nav-desktop" class="container nav">
+                <div class="img-logo">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hover-menu">
+                    <a href="#" class="hover-menu-button">
+                        <i class="fa fa-navicon"></i>
+                        <p>Thể Loại</p>
+                    </a>
+                    <div class="hover-menu-categories">
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Tiên Hiệp</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Huyền Ảo</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Võng Du</p>
+                            </a>
+                        </div>
+                        <div class="w-50">
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                <p>Chuyển Sinh</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="" id="form-search">
+                        <input type="text" class="search-input" placeholder="Tìm truyện, tác giả...">
+                        <button type="submit" class="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <nav id="nav-mobile" class="container nav">
+                <div class="img-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="nav-button" onclick="ToggleNavMobile()">
+                    <a href="#">
+                        <i class="fa fa-navicon"></i>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+        <div class="nav-mobile-dropdown">
+            <div class="search">
+                <form action="" id="form-search">
+                    <input type="text" class="search-input" placeholder="Tìm truyện, tác giả...">
+                    <button type="submit" class="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="category">
+                <div class="title d-flex">
+                    <p>Thể Loại</p>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="d-flex flex-wrap grid">
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-50">
+                        <p>
+                            <a href="#">
+                                <i class="fa fa-tags"></i>
+                                Tiên hiệp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="title-breaking-comic">
+                <h1>Eo thú Pampas hình lục giác - Truyện chữ </h1>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="breaking">
+                <a href="#" class="home">
+                    <i class="fa fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Dị giới</span>
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Gia đình tu tiên</span>
+                </a>
+
+                <i class="fa fa-angle-right"></i>
+                <a href="#">
+                    <span>Chương 149 thu hoạch lớn</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="container d-flex wrap-content">
+            <div class="section-left section-padding w-680">
+                <section class="section-background content-section d-flex section-about-comic">
+                    <div class="w-33 custom-mobile left">
+                        <div class="image-comic">
+                            <figure>
+                                <img src="assets/images/img-3.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="author-comic">
+                            <div class="author">
+                                <h2>
+                                    <i class="fa fa-user"></i>
+                                    <a href="#">
+                                        Người phục vụ linh hồn
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="tag">
+                                <h2>
+                                    <i class="fa fa-tags"></i>
+                                    <a>
+                                        Khoa Nguyễn
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-66 custom-mobile right">
+                        <div class="info">
+                            <div class="title">
+                                <h2>
+                                    <a href="#">
+                                        LINH TỘC TRỜI GIÁNG XUỐNG
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="btn-widget">
+                                <a href="#" class="btn-widget-list">
+                                    <i class="fa fa-list"></i>
+                                    DS Chương
+                                </a>
+
+                                <a href="#" class="btn-widget-reading">
+                                    <i class="fa fa-list"></i>
+                                    Đọc truyện
+                                </a>
+
+                                <a href="#" class="btn-widget-comment">
+                                    <i class="fa fa-list"></i>
+                                    Bình luận
+                                </a>
+                            </div>
+                            <div class="detail-social">
+                            </div>
+                            <div class="description">
+                                <p>Linh tộc trời giáng xuống - Người phục vụ linh hồn</p>
+                                <br>
+                                <p>Giới thiệu: </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-background section-list-chapter">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                <i class="fa fa-pencil-square-o"></i> 5 CHƯƠNG MỚI CẬP NHẬT EO THÚ PAMPAS HÌNH LỤC GIÁC
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-background section-list-chapter">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                <i class="fa fa-list"></i>
+                                DANH SÁCH CHƯƠNG EO THÚ PAMPAS HÌNH LỤC GIÁC
+                            </h2>
+                        </div>
+
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="title-section font-list">
+                        <div class="title-section-left d-flex">
+                            <h4>
+                                <a href="#">
+                                    Chân Thiên Kim Nàng Là Đại Nhân Toàn Năng
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <ul class="paging">
+                        <li class="first">
+                            <a href="#" title="page first">
+                                <i class="fa fa-angle-double-left"></i>
+                            </a>
+                        </li>
+                        <li><a to="" class="active" href="#">1</a></li>
+                        <li><a to="" class="" href="#">2</a></li>
+                        <li><a to="" class="" href="#">3</a></li>
+                        <li class="last"><a href="#" title="page last" class="last"><i
+                                    class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+
+                    <div class="paging-input">
+                        <div class="pages">
+                            <span class="numbpage-text">Trang 1 / 3</span>
+                            <input class="numbpage-input" type="number" placeholder="1" name="gopage" id="gopage">
+                            <button onclick="gopage()" class="numbpage-button" value="go" id="btngopage"><i
+                                    class="fa fa-arrow-right"></i></button>
+
+                            <input type="hidden" name="hdkey" id="hdkey" value="Linh tộc trời giáng xuống">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="section-right section-padding w-320">
+                <section class="section-background category-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                THỂ LOẠI TRUYỆN
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="d-flex flex-wrap">
+                            <div class="w-50">
+                                <div class="tag-comic text-red">
+                                    <i class="fa fa-diamond"></i>
+                                    <a href="#">
+                                        Tiên hiệp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="text-red tag-comic">
+                                    <i class="fa fa-diamond"></i>
+                                    <a href="#">
+                                        Tiên hiệp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="tag-comic">
+                                    <i class="fa fa-tags"></i>
+                                    <a href="#">
+                                        Tiên hiệp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="tag-comic">
+                                    <i class="fa fa-tags"></i>
+                                    <a href="#">
+                                        Tiên hiệp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-background featured-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                Truyện Võng Du mới
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>1</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>2</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>3</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section read-more">
+                        <div class="order d-flex">
+                            <button>Xem thêm <i class="fa fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-background new-publish-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                Truyện Võng Du Hay
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>1</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>2</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>3</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section read-more">
+                        <div class="order d-flex">
+                            <button>Xem thêm <i class="fa fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="section-background new-publish-section">
+                    <div class="title-section">
+                        <div class="title-section-left">
+                            <h2>
+                                Truyện Võng Du Full
+                            </h2>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>1</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>2</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <div class="order d-flex">
+                            <div class="order-number">
+                                <p>3</p>
+                            </div>
+                            <div class="order-title">
+                                <p class="order-title-name">
+                                    <a href="#">
+                                        Tiên Võ Đế Tôn
+                                    </a>
+                                </p>
+                                <div class="order-title-author">
+                                    <p class="author d-flex align-item-base">
+                                        <i class="fa fa-user"></i>
+                                        Lục Giới Tam Đạo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section read-more">
+                        <div class="order d-flex">
+                            <button>Xem thêm <i class="fa fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container d-flex flex-wrap">
+            <div class="w-25 w-100-mobile">
+                <div class="about-us">
+                    <p>
+                        Truyện chữ | Website đọc truyện chữ online hay. Cập nhật những bộ truyện convert (truyencv),
+                        bản
+                        dịch hay và mới nhất hiện nay. Với tất cả các thể loại tiểu thuyết như:truyện tiên hiệp, huyễn
+                        huyễn, kiếm hiệp, xuyên không, đô thị, đam mỹ được cập nhật chương theo ngày, tuần, tháng
+                    </p>
+                    <p>
+                        Email: Truyenchuth@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="w-75 w-100-mobile category-footer">
+                <div class="d-flex flex-wrap">
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh mục hot
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main giấu nghề
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                truyện Tông Môn
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Danh sách truyện được xem nhiều nhất
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Mạng xã hội
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-33 w-100-mobile">
+                        <div class="widget">
+                            <div class="title">
+                                <h3>
+                                    Đối tác
+                                </h3>
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <p>></p>
+                                            <a href="#">
+                                                Truyện main bá đạo
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>Copyright © 2023 - All Rights Reserved. TruyenchuTH.com Phiên bản thử nghiệm</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "flex";
+        }
+
+        function ToggleNavMobile() {
+            document.querySelector('.nav-mobile-dropdown').classList.toggle("show");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

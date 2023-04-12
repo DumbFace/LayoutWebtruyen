@@ -10,6 +10,10 @@
     --main-footer-title-color: #2980b9;
 }
 
+button{
+    cursor: pointer;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -195,6 +199,7 @@ header .search {
     background: #ccc;
 }
 
+
 .w-50 {
     width: 50%;
 }
@@ -230,8 +235,7 @@ section.section-background {
     color: #2980b9;
 }
 
-.title-section-left:hover h2 a,
-.title-section-left:hover h2 i {
+.title-section-left:hover h2 a {
     color: #444;
 }
 
@@ -622,7 +626,11 @@ footer {
 }
 
 .w-33 {
-    width: 33%;
+    width: 33.33%;
+}
+
+.w-66 {
+    width: 66.66%;
 }
 
 footer .about-us {
@@ -795,7 +803,196 @@ div#reading {
     color: #444;
 }
 
+.section-list-chapter .title-section-left i {
+    margin-right: 6px;
+}
+
+.section-list-chapter .title-section-left h4 {
+    margin-left: 7px;
+    font-size: 15px;
+    display: inline;
+    color: #444;
+    font-weight: 400;
+}
+
+
+.section-about-comic figure img {
+    width: 100%;
+    height: 190px;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.section-list-chapter .title-section-left h4:hover {
+    color: #2980b9;
+}
+
+.detail-social {
+    border: 1px dashed #ccc;
+    border-radius: 2px;
+    padding: 4px 24px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.section-about-comic .info .btn-widget a {
+    border-radius: 2px;
+    font-size: 14px;
+    background: #2980b9;
+    color: #fff;
+    padding: 4px 10px;
+    margin: 3px;
+}
+
+.section-about-comic .info {
+    text-align: center;
+    padding: 0px 20px;
+
+}
+
+.section-about-comic .info .title {
+    padding: 0px 0px 15px 0px;
+}
+
+.section-about-comic .info .title h2 {
+    color: #e74c3c;
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+
+.section-about-comic .info .title {
+    padding: 15px 0
+}
+
+.section-about-comic .info .description {
+    text-align: left;
+}
+
+.author-comic {
+    line-height: 1.6;
+}
+
+.author-comic i {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    margin-right: 2px;
+
+}
+
+.author-comic h2 {
+    color: #2980b9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-about-comic .author-comic {
+    padding-left: 10px;
+}
+
+
+
+ul.paging {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ul.paging a:hover {
+    background: #999;
+    color: #fff;
+    border-radius: 2px;
+}
+
+ul.paging li a {
+    padding: 8px 16px;
+}
+
+.paging li a.active {
+    background: #3498db;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.paging-input .pages {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.paging-input .pages .numbpage-text {
+    background: #999;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 8px;
+    margin-right: 10px;
+    color: #fff;
+    padding: 8px 8px;
+}
+
+.paging-input .pages .numbpage-input {
+    width: 53px;
+    font-size: 13px;
+    padding: 5px 5px 5px 6px;
+    display: inline;
+    border: 1px solid #ccc;
+}
+
+.paging-input .pages .numbpage-button {
+    width: 40px;
+    font-size: 13px;
+    background: #999;
+    padding: 6px 12px;
+    margin-left: -1px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.paging-input .pages .numbpage-button:hover {
+    color: #fff ;
+    background-color: #4caf50 ;
+}
+
+
+
+
 @media (max-width:576px) {
+    .btn-widget {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-about-comic {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .section-about-comic .info .title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .section-about-comic .custom-mobile.left {
+        display: flex;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .section-about-comic .custom-mobile.right {
+        width: 100%;
+    }
+
+    .section-about-comic .btn-widget {
+        margin: 10px 0px;
+    }
+
     .breaking .home {
         margin-left: 10px;
     }
