@@ -1030,7 +1030,7 @@ figure .image {
 
 .hot-label img {
     width: auto !important;
-    height: auto;
+    height: auto !important;
     box-shadow: none;
 }
 
@@ -1044,7 +1044,9 @@ figure .image {
 }
 
 @media (max-width:576px) {
-
+    .grid-image img {
+        height: 290px;
+    }
     .w-auto-mobile
     {
         width: auto !important;
@@ -1276,5 +1278,28 @@ figure .image {
 
     .show {
         display: block !important;
+    }
+}
+
+
+@media  (max-width: 375px)
+{
+    .mySlides img {
+        height: 220px;
+    }
+
+    .grid-image img {
+        height: 245px;
+    }
+}
+
+@media  (max-width: 320px)
+{
+    .mySlides img {
+        height: 165px;
+    }
+
+    .grid-image img {
+        height: 190px;
     }
 }
