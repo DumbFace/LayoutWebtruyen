@@ -10,7 +10,7 @@
     --main-footer-title-color: #2980b9;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -164,7 +164,7 @@ header .search {
 
 
 
-#form-search {
+.form-search {
     display: flex;
     position: relative;
     width: 360px;
@@ -322,6 +322,7 @@ figure {
 .overlay-title h3.title-comic {
     color: #fff;
     text-align: center;
+    margin-top: 3px;
 }
 
 h3.title-comic {
@@ -336,7 +337,7 @@ h3.title-comic {
     background: #444;
     right: 5px;
     left: 5px;
-    height: 60px;
+    height: 52px;
     opacity: 0.8;
 }
 
@@ -515,7 +516,7 @@ h3.title-comic {
     border-bottom: 0 solid #d9d9d9;
     color: #999;
     font-size: 13px;
-    padding: 5px 13px 0 13px;
+    padding: 8px 13px 0 13px;
     text-overflow: ellipsis;
     overflow: hidden;
     line-height: 1.6;
@@ -818,7 +819,7 @@ div#reading {
 
 .section-about-comic figure img {
     width: 100%;
-    height: 190px;
+    height: 280px;
     box-shadow: 1px 1px 3px #ccc;
 }
 
@@ -953,14 +954,126 @@ ul.paging li a {
 }
 
 .paging-input .pages .numbpage-button:hover {
-    color: #fff ;
-    background-color: #4caf50 ;
+    color: #fff;
+    background-color: #4caf50;
+}
+
+.section-searching .form-search {
+    border: 1px solid #ccc;
+    width: 100%;
+    /* height: 37px; */
+}
+
+.section-searching .form-search .search-input {
+    padding: 9px 8px !important;
+}
+
+.section-searching .form-search .search-button {
+    background-color: #9e9e9e !important;
+    color: #fff !important;
+    padding: 8px 28px !important;
+    top: 3px;
+    right: 3px !important;
+}
+
+.section-searching h1 {
+    font-size: 15px;
+}
+
+.list-row-author {
+    padding: 10px 10px 0px 10px;
+}
+
+.section-list-author .list-row-author .author {
+
+    padding: 13px 4px;
+    border-left: 6px solid #2196f3;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #ccc;
+    margin-right: 10px;
+    color: #444;
+}
+
+.section-list-author .list-row-author .author h3 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.section-list-author .list-row-author .author h3 i {
+    color: #999;
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.section-list-author .list-row-author .author h3 a {
+    display: flex;
+}
+
+span.hot-label {
+    background-image: url(assets/images/hot.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+figure .image {
+    position: relative;
+}
+
+.hot-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hot-label img {
+    width: auto !important;
+    height: auto;
+    box-shadow: none;
 }
 
 
+.mySlides.desktop {
+    display: flex;
+}
 
+.mySlides.mobile {
+    display: none;
+}
 
 @media (max-width:576px) {
+
+    .w-auto-mobile
+    {
+        width: auto !important;
+    }
+
+    .section-about-comic figure img {
+        height: 190px;
+    }
+
+    .mySlides.desktop {
+        display: none;
+    }
+
+    .mySlides.mobile {
+        display: flex;
+    }
+
+    .category-list h3 {
+        font-size: 15px;
+    }
+
+    .w-100-mobile {
+        width: 100%;
+    }
+
+    .list-row-author {
+        flex-direction: column;
+    }
+
     .btn-widget {
         display: flex;
         flex-wrap: wrap;
